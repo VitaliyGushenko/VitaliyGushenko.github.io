@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
+
+h1,h2,h3,h4 {
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.container {  
+    /* background-color: rgb(229, 252, 27); */
+}
+
+.filter {
+    padding: 20px;
+    background-color: rgb(233, 233, 233);
+}
+
+.filter__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.filter__title__name {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.line {
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+
+input[type="checkbox"]{
+    margin-right: 20px;
+}
+
+input[type="number"]{
+    width: 100%;
+}
+
+
+/* Кнопка подобрать */
+
+.filter__button {
+    width: 100%;
+}
+
+a.button6 {
+    width: 150px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+     text-shadow: 0 -1px 1px #b7bcff;
+    user-select: none;
+    padding: .8em 2em;
+    outline: none;
+    border-radius: 1px;
+    background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#7e8de2, #569aff, #697ccc);
+    background-size: 100% 100%, auto;
+    background-position: 50% 50%;
+    box-shadow: inset #604f9c 0 -1px 1px, inset 0 1px 1px #8a80c4, #b6b6b6 0 0 0 1px, #000 0 10px 15px -10px;
+    transition: 0.2s;
+  }
+  a.button6:hover {
+    background-size: 140% 100%, auto;
+  }
+  a.button6:active {
+    top: 1px;
+    color: #ffdead;
+    box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, 0 10px 10px -9px #000;
+  }
+
+/*  */
+
+.courses {
+    padding: 20px;
+    /* background-color: chocolate; */
+}
+
+.courses__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.courses__filter__courses {
+    /* background-color: royalblue; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.course {
+    width: 32%;
+    height: 170px;
+    /* background-color: seagreen; */
+    margin-bottom: 20px;
+}
+
+.course img {
+    width: 100%;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+}
+
+.course img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.course__name {
+    text-align: center;
+}
+
+/* ------------------------ */
+
+label.custom-select {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+
+}
+
+.custom-select select {
+    width: inherit;
+    display: inline-block;
+    padding: 4px 3px 3px 5px;
+    margin: 0;
+    font: inherit;
+    outline:none; /* remove focus ring from Webkit */
+    line-height: 1.2;
+    background: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border:0;
+}
+
+/* Select arrow styling */
+.custom-select:after {
+    content: "▼";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 70%;
+    line-height: 30px;
+    padding: 0 7px;
+    top: 1px;
+    right: 0px;
+    font-size: 1em;
+    line-height: 30px;
+    color: rgb(96, 94, 235);
+    background: rgb(255, 255, 255);
+    /* color: rgb(141, 124, 218); */
+    pointer-events: none;
+}
+
+.no-pointer-events .custom-select:after {
+    content: none;
+}
+
+
+
+/* ---- */
+
+.programm__info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.programm__info__1, .programm__info__2, .programm__info__3, .programm__info__4, .programm__info__5, .programm__info__6 {
+    display: none;
+    transition: all 0.3s ease; /*плавная анимация*/
+}
+
+.program__info__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul, li {
+    display: block; /*убирает маркеры у элемента списка */
+    padding: 0;
+    margin: 0;
+}
+
+ul > li {
+    padding-bottom: 10px;
+}
+ 
+.more:focus {
+    outline: none; /*убирает рамку при нажатии*/
+}
+
+.more {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.2s ease;
+    border: 0px solid transparent;
+}
+
+.more::after {
+    content: "\▼";
+    position: relative;
+    top: 5px;
+    left: 8px;
+    font-size: 1em;
+    line-height: 30px;
+    color: rgb(96, 94, 235);
+    /* padding: 0 7px; */
+}
+
+.selected::after {
+    content: "\▲";
+}
+
+.more:hover {
+
+}
+
+@media screen and (max-width: 768px) {
+    .course {
+        width: 48%;
+        height: 170px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    html {
+      margin-left: calc(100vw - 100%);
+      margin-right: 0;
+    }
+  }

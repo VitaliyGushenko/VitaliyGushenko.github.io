@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="filter">
+                    <div class="filter__title">Фильтр</div>
+                    <div class="line"></div>
+                    <div class="filter__direction">
+                        <div class="filter__title__name">
+                            Направление
+                        </div>
+                        <label class="custom-select">
+                            <select>
+                                <option>Техническое</option>
+                                <option>Техническое 2</option>
+                                <option>Техническое 3</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="filter__criteria">
+                        <div class="programm__info">
+                            <div class="program__info__text">
+                                <h4 class="filter__title__name">Критерии</h4>
+                                <button class="more" name="more_1"></button>
+                            </div>
+                            <ul class="programm__info__1">
+                                <li>
+                                    <input type="checkbox" name="option1" value="a1">
+                                    Программирование
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="option2" value="a2">
+                                    Web технологии
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="option3" value="a3">
+                                    Графика
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="option4" value="a4">
+                                    Алгоритмизация
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="option5" value="a5">
+                                    3D
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter__age">
+                        <div class="filter__title__name">
+                            Возраст ребенка
+                        </div>
+                        <input type="number">
+                    </div>
+                    <div class="filter__days">
+                        <div class="programm__info">
+                            <div class="program__info__text">
+                                <h4 class="filter__title__name">Дни недели</h4>
+                                <button class="more" name="more_2"></button>
+                            </div>
+                            <ul class="programm__info__2">
+                                <li>
+                                    <input type="checkbox" name="option1" value="a1">
+                                    Понедельник
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="option2" value="a2">
+                                    Вторник
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="option3" value="a3">
+                                    Среда
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="option4" value="a4">
+                                    Четверг
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="option5" value="a5">
+                                    Пятница
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="option6" value="a6">
+                                    Суббота
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="option7" value="a7">
+                                    Воскресение
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter__button">
+                        <a href="#" class="button6">Подобрать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 ms-auto">
+                <div class="courses">
+                    <div class="courses__title">Кружки по интересам</div>
+                    <div class="courses__filter__courses">
+                        <div class="course">
+                            <a href="https://centers.by/programmirovanie-na-python">
+                                <div class="course__image">
+                                    <img src="https://centers.by/wp-content/uploads/2019/07/25/Programmirovanie-na-Python.jpg">
+                                </div>
+                                <div class="course__name">
+                                    Python
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course">
+                            <a href="https://centers.by/graficheskij-dizajn">
+                                <div class="course__image">
+                                    <img src="https://centers.by/wp-content/uploads/2019/07/29/Graficheskij-dizajn-1024x512.jpg">
+                                </div>
+                                <div class="course__name">
+                                    Графич. дизайн
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course">
+                            <a href="https://centers.by/prototipirovanie">
+                                <div class="course__image">
+                                    <img src="https://centers.by/wp-content/uploads/2019/07/25/Prototipirovanie.jpg">
+                                </div>
+                                <div class="course__name">
+                                    Прототипирование
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course">
+                            <a href="https://centers.by/unreal-engine">
+                                <div class="course__image">
+                                    <img src="https://centers.by/wp-content/uploads/2020/07/31/Unreal.jpg">
+                                </div>
+                                <div class="course__name">
+                                    Unreal Engine
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="course">
+                            <a href="https://centers.by/cybersport">
+                                <div class="course__image">
+                                    <img src="https://centers.by/wp-content/uploads/2019/09/02/Kibersport.jpg">
+                                </div>
+                                <div class="course__name">
+                                    Киберспорт
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course">
+                            <a href="https://centers.by/minecraft">
+                                <div class="course__image">
+                                    <img src="https://centers.by/wp-content/uploads/2020/09/02/minecraft-1.jpg">
+                                </div>
+                                <div class="course__name">
+                                    Minecraft
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
